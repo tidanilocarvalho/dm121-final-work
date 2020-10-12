@@ -1,0 +1,83 @@
+/* Serviços */
+#services-content {
+    display: flex;
+}
+
+#services-content section,
+#services-content aside {
+    margin: 0.3125em/* 5 / 16 */
+}
+
+#services {
+    background-color: #f4f4f4;
+    flex: 1;
+}
+
+#services ul li {
+    border: 1px solid #ccc;
+    background-color: #e6e6e6;
+    padding: 0.625em;
+    /* 10 / 16 */
+}
+
+.cotacao {
+    color: #fff;
+    background-color: #35424a;
+    height: 18.75em;
+    /* 300 / 16 */
+}
+
+.cotacao h3 {
+    margin: 0.3125em
+}
+
+#form-cotacao {
+    padding: 0.625em
+}
+
+#form-cotacao label {
+    display: block;
+}
+
+#form-cotacao input {
+    width: 15.9375em;
+    /* 255 / 16 */
+}
+
+@media screen and (max-width: 48em) {
+    /* 768/16 */
+    .flex-container {
+        flex-direction: column;
+    }
+   
+    /*Services*/
+    #services-content {
+        flex-direction: column;
+    }
+    #services h2 {
+        display: none;
+    }
+    #services-content section,
+    #services-content aside,
+    #services ul,
+    #services ul li {
+        margin: 0;
+        padding: 0;
+    }
+    .cotacao {
+        height: auto;
+    }
+
+    footer{
+        background-color: #333333;
+    }
+}
+
+@media screen and (max-width: 20em) {
+    /* 320 / 16 */
+    #form-cotacao input,
+    #form-cotacao textarea,
+    #form-cotacao button {
+        width: 100%;
+    }
+}
